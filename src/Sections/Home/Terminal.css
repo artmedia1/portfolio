@@ -1,0 +1,68 @@
+/* Terminal base styling */
+.terminal {
+    width: 500px;
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  /* Terminal header styling for the colored control buttons */
+  .terminal-header {
+    display: flex;
+    position: relative;
+    padding: 12px 8px;
+    align-items: center;
+    height: 16px;
+    background-color: #696969;
+  }
+  
+  /* Control button styling */
+  .terminal-button {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .red { background-color: #ff605c; }
+  .yellow { background-color: #ffbd44; }
+  .green { background-color: #00ca4e; }
+  
+  /* Terminal body styling */
+  .terminal-body {
+    padding: 12px 8px 250px;
+  }
+  
+  /* Prompt text styling */
+  .prompt-text {
+    color: #5af78e;
+    white-space: nowrap;
+  }
+  
+  /* Typed text styling with animation */
+  .typed-text {
+    color: #5af78e;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #5af78e; /* The caret */
+    width: 0;
+    animation: typing 1s steps(30, end) forwards, /* Typing effect */
+               blink-caret .75s step-end infinite; /* Cursor blink */
+  }
+  
+  /* Typing animation keyframes */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Cursor blink animation keyframes */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #5af78e; }
+  }
+  

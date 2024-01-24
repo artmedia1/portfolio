@@ -1,0 +1,53 @@
+.appbar {
+  padding-top: 10px;
+  background-color: #1e1e1e !important;
+}
+
+.navbarListItem {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
+  min-width: 150px !important;
+}
+
+.navbarListItem.active h3 {
+  text-decoration: underline;
+  color: orange;
+  text-decoration-thickness: 2px; /* Set the thickness of the underline */
+  text-underline-offset: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 2;
+  max-width: 40%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  max-width: 30%;
+}
+
+.code-icon {
+  font-size: 60;
+  background-color: orange;
+  color: #1e1e1e;
+  border-radius: 50%;
+}
+
+.menu-icon {
+  color: white;
+}
+
+.drawer .MuiDrawer-paper {
+  top: 74px;
+  width: 100vw;
+  background-color: #323232;
+}
+
+.MuiListItem-root {
+  justify-content: center !important; /* Centers the item horizontally */
+  color: white; /* Sets the text color to white */
+}

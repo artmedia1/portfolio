@@ -1,0 +1,64 @@
+#HomeSection {
+  padding-top: 300px !important;
+}
+
+.intro-container {
+  justify-content: flex-end;
+  transform: translateX(-5%);
+}
+
+.terminal-container {
+  justify-content: flex-start;
+  transform: translateX(5%);
+}
+
+.intro {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.hello {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.aboutText {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.aboutName {
+  color: orange;
+}
+
+.aboutDescription {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.resume-btn {
+  background-color: #373737 !important;
+  color: white !important;
+  border-color: none !important;
+}
+
+.icon-spacing {
+  margin-right: 8px; /* Adjust the spacing as needed */
+}
+
+@media screen and (max-width: 1200px) {
+    #HomeSection {
+        padding-top: 150px !important;
+      }
+
+  .intro-container {
+    justify-content: center;
+    transform: translateX(0%);
+  }
+  .terminal-container {
+    padding-top: 30px;
+    justify-content: center;
+    transform: translateX(0%);
+  }
+}
