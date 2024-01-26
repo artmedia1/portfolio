@@ -1,15 +1,26 @@
 .card-container {
-    max-width: 70vw;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  display: flex !important;
+  justify-content: center !important; /* This will center the child horizontally */
+  align-items: center !important; /* This will center the child vertically if needed */
+  width: 100%; /* Ensure the div takes the full width */
+  /* Remove the inline display: inline-block; since flex is used */
+}
+
+.card {
+  max-width: 70vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .card-media {
-    height: min(500px, 50vh);
+  height: min(400px, 50vh);
+}
+
+.project-title {
 }
 
 @media screen and (max-width: 1200px) {
-    .card-media {
-        height: min(500px, 25vh);
-    }
+  .card-media {
+    height: min(500px, 25vh);
   }
+}

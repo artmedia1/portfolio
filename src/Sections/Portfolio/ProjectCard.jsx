@@ -13,19 +13,19 @@ function ProjectCard(props) {
   useEffect(() => {
     if (cardRef.current) {
       const parentDiv = cardRef.current.parentNode;
-      parentDiv.classList.add('test');
+      parentDiv.classList.add('card-container');
     }
   }, []);
 
   return (
-    <Card ref={cardRef} className="card-container">
+    <Card ref={cardRef} className="card">
       <CardMedia className='card-media'
         component="img"
         alt="project_pic"
         image={props.imageSrc}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" className='project-title'>
           {props.projectName}
         </Typography>
         <Typography variant="body2" color="text.secondary">

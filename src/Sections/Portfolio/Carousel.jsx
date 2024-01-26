@@ -23,6 +23,7 @@ import "./Carousel.css";
 
 function Carousel({ projects }) {
   const settings = {
+    arrows: false,
     centerMode: true,
     dots: true,
     infinite: true,
