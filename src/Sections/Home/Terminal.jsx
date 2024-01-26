@@ -13,15 +13,13 @@ function Terminal() {
       <div className="terminal-body">
         <Grid container spacing={2}>
           <Grid item xs="auto">
-          <span className="prompt-text">user@localhost:~$ </span>
+            <span className="prompt-text">user@localhost:~$ </span>
           </Grid>
           <Grid item xs="auto" container justifyContent="flex-start">
-          <span className="typed-text">Hello World!</span>
+            <span className="typed-text">Hello World!</span>
           </Grid>
-          <Grid item xs={4} container justifyContent="flex-start">
-          </Grid>
+          <Grid item xs={4} container justifyContent="flex-start"></Grid>
         </Grid>
-       
       </div>
     </div>
   );

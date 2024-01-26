@@ -15,6 +15,7 @@
 .intro {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  max-width: 80vw;
 }
 
 .hello {
@@ -74,11 +75,32 @@
   .intro-container {
     justify-content: center;
     transform: translateX(0%);
-    align-items: flex-end;
-    padding-bottom: 10vh;
+    /* align-items: flex-end; */
   }
+
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .aboutText {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+    
   .terminal-container {
     justify-content: center;
     transform: translateX(0%);
+    padding-top: 0 !important;
   }
 }
+
+@media screen and (max-width: 400px) {
+    #HomeSection {
+        padding-top: 150px !important;
+      }
+      
+    .intro-container {
+        padding-bottom: min(150px, 40%);
+    }
+  }
+  

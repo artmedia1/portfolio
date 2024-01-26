@@ -53,7 +53,7 @@
     overflow: hidden;
     border-right: .15em solid #5af78e; /* The caret */
     width: 0;
-    animation: typing 1s steps(30, end) forwards, /* Typing effect */
+    animation: typing 1.5s steps(30, end) forwards, /* Typing effect */
                blink-caret .75s step-end infinite; /* Cursor blink */
   }
   
@@ -69,3 +69,9 @@
     50% { border-color: #5af78e; }
   }
   
+  @media screen and (max-width: 1200px) {
+    .terminal-body {
+        max-height: 20vh;
+        font-size: .9rem;
+      }
+  }
