@@ -1,15 +1,15 @@
 #HomeSection {
-  padding-top: 300px !important;
+  align-items: center !important;
 }
 
 .intro-container {
   justify-content: flex-end;
-  transform: translateX(-5%);
+  align-items: center;
 }
 
 .terminal-container {
   justify-content: flex-start;
-  transform: translateX(5%);
+  align-items: center;
 }
 
 .intro {
@@ -48,16 +48,36 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #HomeSection {
-        padding-top: 150px !important;
-      }
+    /* #HomeSection {
+      padding-top: 150px !important;
+    } */
+  
+    .intro-container {
+      justify-content: center;
+      transform: translateX(0%);
+      max-height: 10vh;
+      align-items: flex-end;
+    }
+    .terminal-container {
+      justify-content: center;
+      transform: translateX(0%);
+      justify-content: center !important; /* This will center the child horizontally */
+      align-items: flex-start;
+    }
+  }
+
+@media screen and (max-width: 1200px) {
+  #HomeSection {
+    padding-top: 150px !important;
+  }
 
   .intro-container {
     justify-content: center;
     transform: translateX(0%);
+    align-items: flex-end;
+    padding-bottom: 10vh;
   }
   .terminal-container {
-    padding-top: 30px;
     justify-content: center;
     transform: translateX(0%);
   }

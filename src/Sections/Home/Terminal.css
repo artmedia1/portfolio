@@ -1,6 +1,7 @@
 /* Terminal base styling */
 .terminal {
-    width: 500px;
+    width: 80vw;
+    max-width: 500px;
     background-color: #282c34;
     color: #fff;
     border-radius: 5px;
@@ -33,7 +34,9 @@
   
   /* Terminal body styling */
   .terminal-body {
-    padding: 12px 8px 250px;
+    padding: 12px 8px;
+    height: 30vh;
+    max-height: 250px;
   }
   
   /* Prompt text styling */

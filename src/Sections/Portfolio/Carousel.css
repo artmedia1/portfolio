@@ -1,0 +1,14 @@
+.slick-dots button {
+    color:white !important; 
+    background-color: gray !important;
+    border-radius: 50%;
+}
+
+.test {
+    display: flex !important;
+    justify-content: center !important; /* This will center the child horizontally */
+    align-items: center !important; /* This will center the child vertically if needed */
+    width: 100%; /* Ensure the div takes the full width */
+    /* Remove the inline display: inline-block; since flex is used */
+  }
+  

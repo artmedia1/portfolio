@@ -8,13 +8,13 @@ import ArticleIcon from "@mui/icons-material/Article";
 
 function Home() {
   const openResume = () => {
-    const resumePath = `${process.env.PUBLIC_URL}/resume.pdf`;
+    const resumePath = `${process.env.PUBLIC_URL}/assets/resume.pdf`;
     window.open(resumePath, "_blank");
   };
 
   return (
     <section id="HomeSection">
-      <Grid container spacing={2} alignItems="center">
+      <Grid container spacing={12} style={{ height: "100vh" }}>
         <Grid item xs={12} lg={6} container className="intro-container">
           <Grid item textAlign={"left"} className="intro">
             <span className="hello">Hello,</span>
@@ -39,7 +39,7 @@ function Home() {
           </Grid>
         </Grid>
         <Grid item xs={12} lg={6} container className="terminal-container">
-          <Grid item className="terminal-container">
+          <Grid item >
             <Terminal />
           </Grid>
         </Grid>
