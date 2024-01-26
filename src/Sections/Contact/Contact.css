@@ -1,3 +1,26 @@
 #ContactSection {
-    margin-top: 10vh;
+    margin: 0 20vw;
+    min-height: 100vh;
+    padding-top: 10vh;
 }
+
+.about-text {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    line-height: 1.5;
+    margin-top: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+    #AboutSection {
+        margin: 0 10vw;
+    }
+
+    .about-text {
+        font-size: medium;
+        margin-top: 40px;
+        line-height: 1.75;
+    }
+  }
