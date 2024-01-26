@@ -76,6 +76,7 @@
     justify-content: center;
     transform: translateX(0%);
     /* align-items: flex-end; */
+    padding-bottom: min(150px, 50%);
   }
 
   .hello {
@@ -95,12 +96,8 @@
 }
 
 @media screen and (max-width: 400px) {
-    #HomeSection {
+    /* #HomeSection {
         padding-top: 150px !important;
-      }
-      
-    .intro-container {
-        padding-bottom: min(150px, 50%);
-    }
+      } */
   }
   

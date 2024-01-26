@@ -18,8 +18,6 @@ function Portfolio() {
     <section id="PortfolioSection">
       <h1>Portfolio</h1>
       <div>
-        {/* <Carousel slides={slides} /> */}
-        {/* <ProjectCard cards={cards}/> */}
         <Carousel projects={projects} />
       </div>
     </section>

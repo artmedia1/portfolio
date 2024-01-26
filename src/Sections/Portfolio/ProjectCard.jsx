@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import './Carousel.css'
+import './ProjectCard.css'
 
 function ProjectCard(props) {
   const cardRef = useRef(null);
@@ -18,11 +18,10 @@ function ProjectCard(props) {
   }, []);
 
   return (
-    <Card ref={cardRef} sx={{ maxWidth: "70vw" }}>
-      <CardMedia
+    <Card ref={cardRef} className="card-container">
+      <CardMedia className='card-media'
         component="img"
         alt="project_pic"
-        height="270"
         image={props.imageSrc}
       />
       <CardContent>

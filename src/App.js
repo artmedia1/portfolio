@@ -8,13 +8,13 @@ import Contact from "./Sections/Contact/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
       <Home />
       <About />
       <Portfolio />
       <Contact />
-    </BrowserRouter>
+    </div>
   );
 }
 

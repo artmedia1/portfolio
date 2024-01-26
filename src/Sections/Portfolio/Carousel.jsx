@@ -39,13 +39,13 @@ function Carousel({ projects }) {
     //       dots: true,
     //     },
     //   },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
     ],
   };
 
