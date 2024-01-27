@@ -6,12 +6,12 @@ import ProjectCard from "./ProjectCard"; // Adjust the path according to your fi
 
 
 function Portfolio() {
-  // Define the slides for the carousel
+  //Note: the projects are passed on to carousel and then is mapped to cards
   const projects = [
-    { imageSrc: "/assets/project1.png", projectName: "Legend 1" },
-    { imageSrc: "/assets/project2.gif", projectName: "Legend 2" },
-    { imageSrc: "/assets/project3.png", projectName: "Legend 3" },
-    { imageSrc: "/assets/profile-pic.png", projectName: "Legend 4" },
+    { imageSrc: "/assets/climate-quest.png", projectName: "Climate Quest", projectDescription: "This project is a web application that leverages ChatGPT and other APIs to provide users with real-time weather data and personalized attire recommendations. It's designed to offer an interactive and user-friendly interface for getting weather updates and attire suggestions."},
+    { imageSrc: "/assets/alphen.gif", projectName: "Discord Bot - Alphen" },
+    { imageSrc: "/assets/portfolio.png", projectName: "Portfolio website" },
+    { imageSrc: "/assets/travel-tracker.png", projectName: "Travel Tracker" },
   ];
 
   return (

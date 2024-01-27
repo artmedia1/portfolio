@@ -57,6 +57,7 @@ function Carousel({ projects }) {
           <ProjectCard
             imageSrc={project.imageSrc}
             projectName={project.projectName}
+            projectDescription={project.projectDescription}
           />
         </div>
       ))}

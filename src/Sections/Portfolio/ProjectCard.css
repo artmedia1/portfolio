@@ -7,19 +7,34 @@
 }
 
 .card {
-  max-width: 70vw;
+  max-width: 50vw;
   margin-top: 40px;
-  margin-bottom: 40px;
+  border: 1px solid rgb(60, 60, 60);
 }
 
 .card-media {
-  height: min(400px, 50vh);
+  height: max(400px, 50vh);
+  object-fit: cover;
 }
 
-.project-title {
+.card-content {
+  background-color: #323232;
+  color: white;
+}
+
+.project-description {
+  text-align: start;
+}
+
+.card-actions {
+  background-color: #323232;
 }
 
 @media screen and (max-width: 1200px) {
+  .card {
+    max-width: 70vw;
+    margin-bottom: 40px;
+  }
   .card-media {
     height: min(500px, 25vh);
   }
