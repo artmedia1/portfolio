@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
+
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("HomeSection");

@@ -1,26 +1,40 @@
 #ContactSection {
-    margin: 0 20vw;
-    min-height: 100vh;
-    padding-top: 10vh;
-}
-
-.about-text {
-    text-align: left;
+    display: flex;          /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;   
+    min-height: 80vh;      
+    padding: 0;            
+    color: white;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: larger;
-    line-height: 1.5;
-    margin-top: 75px;
 }
 
-@media screen and (max-width: 1200px) {
-    #AboutSection {
-        margin: 0 10vw;
-    }
+.contact-input {
+    background-color: #323232 !important;
+    color: white !important;
+}
 
-    .about-text {
-        font-size: medium;
-        margin-top: 40px;
-        line-height: 1.75;
+.contact-input input {
+    color: white !important; /* Input text color */
+  }
+  
+  .contact-input label {
+    color: white !important; /* Label color */
+  }
+  
+  .contact-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: none !important; /* Border color */
+  }
+  
+  .contact-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: white !important; /* Border color on hover */
+  }
+  
+  .contact-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: white !important; /* Border color on focus */
+  }
+  
+@media screen and (max-width: 1200px) {
+    #ContactSection {
+        margin: 0 10vw !important;
     }
   }
