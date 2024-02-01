@@ -9,6 +9,13 @@ const projects = [
     demoLink: "https://randy-huynh.com",
   },
   {
+    imageSrc: "/assets/secrets-app.png",
+    projectName: "Secrets Sharing App",
+    projectDescription: 
+      "The Secrets Sharing App was a cornerstone project in my journey to understand and implement authentication technologies and techniques. This Node.js application, backed by PostgreSQL, allowed users to register, log in, and share secrets anonymously. It was a hands-on experience in integrating bcrypt for password hashing and using Sequelize as an ORM. Prior to learning React, I used EJS for dynamic rendering of websites, this being one of the \"larger\" small projects utilizing EJS.",
+    githubLink: "https://github.com/artmedia1/Practice/tree/main/The%20Complete%202023%20Web%20Development%20Bootcamp/Sections/Section%2034%20-%20Authentication/34.1%20-%20Getting%20Started",
+  },
+  {
     imageSrc: "/assets/climate-quest.png",
     projectName: "Climate Quest",
     projectDescription: "Climate Quest was my deep dive into the vast sea of APIs and their practical applications. The goal? To create a web application that didn't just tell you the weather in a city but also used the power of OpenAI to suggest activities and appropriate attire. It was like giving a personal touch to the weather forecast. This project wasn't just about integrating different APIs, though – it was also my first real experience in web hosting and getting my hands dirty with AWS. Climate Quest marked a significant milestone for me, combining data from various sources into a cohesive, user-friendly service. From figuring out the ins and outs of hosting to understanding how different APIs can work in harmony, this project was an exhilarating learning adventure. It was a good feeling to be able to get something up and running",
