@@ -1,0 +1,34 @@
+/* Experience.css */
+#ExperienceSection {
+    margin: 0 20vw;
+    min-height: 100vh;
+    padding-top: 10vh;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: xx-large
+}
+
+.experience-text {
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 75px;
+}
+
+.experience-text p{
+    font-size: larger;
+}
+
+@media screen and (max-width: 1200px) {
+    #ExperienceSection {
+        margin: 0 10vw;
+    }
+
+    .experience-text {
+        font-size: small;
+        margin-top: 40px;
+        line-height: 1.75;
+    }
+}

@@ -13,33 +13,48 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 
-
 function Navbar() {
   const [activeSection, setActiveSection] = useState("HomeSection");
   const [drawerState, setDrawerState] = useState(false);
 
-  const handleScroll = () => {
-    // Get the current scroll position
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
+  const buttons = [
+    {
+      section: "HomeSection",
+      name: "Home",
+    },
+    {
+      section: "AboutSection",
+      name: "About",
+    },
+    {
+      section: "EducationSection",
+      name: "Education",
+    },
+    {
+      section: "ExperienceSection",
+      name: "Experience",
+    },
+    {
+      section: "PortfolioSection",
+      name: "Portfolio",
+    },
+  ];
 
-    // Get sections
-    const aboutSection = document.getElementById("AboutSection");
-    const portfolioSection = document.getElementById("PortfolioSection");
+  // Handles the logic for setting the active section and highlighting the buttons
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
     const contactSection = document.getElementById("ContactSection");
 
-    // Set state based on scroll position. Check from bottom to top.
-    if (contactSection && scrollPosition >= contactSection.offsetTop) {
-      setActiveSection("ContactSection");
-    } else if (
-      portfolioSection &&
-      scrollPosition >= portfolioSection.offsetTop
-    ) {
-      setActiveSection("PortfolioSection");
-    } else if (aboutSection && scrollPosition >= aboutSection.offsetTop) {
-      setActiveSection("AboutSection");
-    } else {
-      setActiveSection("HomeSection"); // Default to home
+    let activeSection = "HomeSection";
+    for (const button of buttons) {
+      const section = document.getElementById(button.section);
+      if (contactSection && scrollPosition >= contactSection.offsetTop) {
+        activeSection = "ContactSection";
+      } else if (section && scrollPosition >= section.offsetTop) {
+        activeSection = button.section;
+      }
     }
+    setActiveSection(activeSection);
   };
 
   const scrollToSection = (sectionId) => {
@@ -72,21 +87,6 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const buttons = [
-    {
-      section: "HomeSection",
-      name: "Home",
-    },
-    {
-      section: "AboutSection",
-      name: "About",
-    },
-    {
-      section: "PortfolioSection",
-      name: "Portfolio",
-    },
-  ];
 
   return (
     <AppBar className="appbar" position="fixed" elevation={0}>

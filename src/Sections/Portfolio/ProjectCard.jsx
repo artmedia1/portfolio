@@ -42,8 +42,28 @@ function ProjectCard(props) {
         </Typography>
       </CardContent>
       <CardActions className="card-actions">
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        {props.githubLink && (
+          <Button
+            size="small"
+            component="a"
+            href={props.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </Button>
+        )}
+        {props.demoLink && (
+          <Button
+            size="small"
+            component="a"
+            href={props.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Demo
+          </Button>
+        )}
       </CardActions>
     </Card>
   );

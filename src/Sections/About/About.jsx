@@ -8,13 +8,7 @@ function About() {
       <h1>About</h1>
       <div className="about-text">
         <p>
-          Hello there! I'm Randy Huynh, an aspiring software engineer with a
-          educational background in the mechanical industry. My journey began at
-          Walk With Web Inc. (WWW), a pioneering Canadian corporation focused on
-          bridging the gap between technology and social sciences research. At
-          WWW, I contributed to the creation and maintenance of digital
-          platforms, playing a vital role in making research more accessible and
-          sustainable.
+          Hello there! I'm Randy Huynh, a software engineer in the making, with roots in mechanical studies. My fascination with the mechanics of things traces back to my days spent engrossed in Discovery Channel programs. Shows like MythBusters and How It's Made sparked my curiosity about how individual components come together to create intricate systems that yield final products. This early interest laid the foundation for my career path, where I began my professional journey at Walk With Web Inc. (WWW), a forward-thinking Canadian company at the intersection of technology and social sciences. My role at WWW allowed me to play a key part in developing and upkeeping digital platforms, thereby enhancing the accessibility and longevity of research initiatives.
         </p>
         <p>
           But let's rewind a bit. I'm a proud alum of York University, where I

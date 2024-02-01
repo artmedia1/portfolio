@@ -58,6 +58,8 @@ function Carousel({ projects }) {
             imageSrc={project.imageSrc}
             projectName={project.projectName}
             projectDescription={project.projectDescription}
+            githubLink={project.githubLink}
+            demoLink={project.demoLink}
           />
         </div>
       ))}
