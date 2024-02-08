@@ -3,7 +3,8 @@
     flex-direction: column; /* Stack children vertically */
     align-items: center;   
     min-height: 80vh;      
-    padding: 0;            
+    padding:0;
+    padding-top: 200px;            
     color: white;
     font-family: "Roboto", sans-serif;
 }
