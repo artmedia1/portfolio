@@ -5,7 +5,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
 import "./ProjectCard.css";
+import Technology from "../../components/Technology";
 
 function ProjectCard(props) {
   const cardRef = useRef(null);
@@ -36,7 +38,14 @@ function ProjectCard(props) {
           className="project-title"
         >
           {props.projectName}
+          {console.log(props.technologies)}
         </Typography>
+        <div className="technology-container">
+          {props.technologies.split(", ").map((technology, index) => (
+            <Technology key={index} technologies={technology} />
+          ))}
+        </div>
+
         <Typography variant="body2" className="project-description">
           {props.projectDescription}
         </Typography>

@@ -60,6 +60,7 @@ function Carousel({ projects }) {
             projectDescription={project.projectDescription}
             githubLink={project.githubLink}
             demoLink={project.demoLink}
+            technologies={project.technologies}
           />
         </div>
       ))}
