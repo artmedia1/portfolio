@@ -22,11 +22,12 @@ function Home() {
             <span className="aboutText">
               I'm
               <span className="aboutName"> Randy Huynh</span>
+              <span>,</span>
               <br />
-              Software Developer
+              Software Engineer
             </span>
             <p className="aboutDescription">
-              New Grad Computer Engineering student from York University
+              Full Stack Developer @ Miipe Quality Solutions
             </p>
             <Button
               variant="contained"
