@@ -1,5 +1,11 @@
-
 const experienceData = [
+  {
+    role: "Full Stack Developer",
+    company: "Miipe Quality Solutions",
+    location: "Toronto, Canada",
+    duration: "April 2024 - Current",
+    description: "As my first post-graduate role, joining Miipe Quality Solutions has been an exciting and deeply educational experience. The challenges I face daily are demanding yet incredibly rewarding, pushing me to expand my skill set and grow as a developer. I'm grateful for this opportunity, which has allowed me to apply my knowledge in real-world scenarios and continue learning in a supportive and dynamic environment."
+  },
   {
     role: "Software Developer",
     company: "Walk With Web",
@@ -15,6 +21,5 @@ const experienceData = [
     description: "In this role, I was one of the first point of contact for students, staff, and alumni seeking assistance with their accounts and a variety of technical issues. My tenure here was highly rewarding; I had the pleasure of meeting incredible people and am eternally thankful for the guidance and support of my manager. The experience was also eye-opening, as it exposed me to the user-end challenges of software usability, often finding myself frustrated with the inefficiencies of poorly designed systems. This fueled my passion for developing user-friendly software and streamlined digital solutions."
   }
 ];
-
 
 export default experienceData;
