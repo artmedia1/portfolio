@@ -35,7 +35,5 @@ To install the project, follow these steps:
     npm start
     ```
 
-## Contact
 
-For any further inquiries or professional engagements, don't hesitate to reach out via [LinkedIn](https://www.linkedin.com/in/randy-huynh1/) or email at [Randy_Huynh@hotmail.com](mailto:Randy_Huynh@hotmail.com).
 
